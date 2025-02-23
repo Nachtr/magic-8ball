@@ -1,0 +1,44 @@
+import random
+# Declare a name
+name = ""
+# Declare a yes or no question that I want to ask the magic 8 ball
+question = "Is it going to snow today?"
+
+# Declare Answer
+answer = ""
+
+#Generating a random number
+random_number = random.randint(1, 9)
+# print(random_number)
+
+if random_number == 1:
+    answer = "Yes - definitely"
+elif random_number == 2:
+    answer = "It is decidedly so..."
+elif random_number == 3:
+    answer = "Without a doubt"
+elif random_number == 4:
+    answer = "Reply hazy, try again!"
+elif random_number == 5:
+    answer = "Ask again at a later time..."
+elif random_number == 6:
+    answer = "Better not tell you now"
+elif random_number == 7:
+    answer = "My sources say no"
+elif random_number == 8:
+    answer = "Outlook not so good"
+elif random_number == 9:
+    answer = "Very doubtful"
+else:
+    answer = "Error"
+
+# Is the question safe to be asked?
+if question == "":
+    print("Unable to ask question! Please enter a question")
+else:
+    if name == "":
+        print("Question:", question)
+        print("Magic 8-Ball's answer: ", answer)
+    else:
+        print(name, "asks:", question)
+        print("Magic 8-Ball's answer: ", answer)
